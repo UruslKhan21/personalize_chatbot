@@ -176,24 +176,23 @@ cython_debug/
 data/private/
 # Ignore everything inside output/, but keep placeholders and small artifacts
 # Ignore everything inside output/
+# ----- OUTPUT -----
+# Ignore everything in output by default
 output/**
-
-# Allow .gitkeep so empty folders appear in GitHub
+# Keep placeholders and common small artifacts
 !output/**/.gitkeep
-
-# Allow combined.txt (or any training data you want to push)
-!output/combined_txt.txt
-
-# Allow JSON summary/config files inside output
+!output/**/*.txt
 !output/**/*.json
+!output/**/*.csv
 
+# ----- DATA -----
+# Keep all data text files, but still ignore data/private
+!data/**/*.txt
+!data/**/*.json
+!data/**/*.csv
+data/private/**
+!data/private/**/.gitkeep   # still show folder if you want
 
-# Ignore everything inside checkpoints (large model files)
+# ----- CHECKPOINTS (large) -----
 checkpoints/**
-
-# Allow .gitkeep for empty checkpoint folder
 !checkpoints/**/.gitkeep
-
-
-# Ignore large dataset file unless you want to track it manually
-AtlaSetcombined_txt.txt
