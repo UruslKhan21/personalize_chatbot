@@ -196,4 +196,4 @@ checkpoints/**
 
 
 # Ignore large dataset file unless you want to track it manually
-AtlaSetCombined_txt.txt
+AtlaSetcombined_txt.txt
