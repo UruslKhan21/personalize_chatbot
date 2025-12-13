@@ -184,6 +184,8 @@ output/**
 !output/**/*.txt
 !output/**/*.json
 !output/**/*.csv
+!output/tokenizer/my_tokenizer.model
+
 
 # ----- DATA -----
 # Keep all data text files, but still ignore data/private
